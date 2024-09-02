@@ -4,7 +4,7 @@ import { chunkTextBySentences } from "matts-llm-tools";
 import ollama from "ollama";
 
 const collectionName = "buildragwithts";
-const { embedmodel, mainmodel } = getConfig();
+const { embedmodel } = getConfig();
 
 const chroma = new ChromaClient({
   path: "http://localhost:8000",
